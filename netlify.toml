@@ -1,0 +1,19 @@
+# Netlify configuration file
+
+[build]
+  command = "echo 'Building...'"
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/api"
+  status = 200
+
+# Serve static files
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
