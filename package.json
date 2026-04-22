@@ -1,0 +1,19 @@
+{
+  "name": "idlebx-search",
+  "version": "1.0.0",
+  "description": "Idleb X - Breach Intelligence Search Engine",
+  "main": "index.html",
+  "scripts": {
+    "start": "netlify dev",
+    "build": "echo 'Build complete'"
+  },
+  "dependencies": {
+    "node-fetch": "^2.7.0"
+  },
+  "devDependencies": {
+    "netlify-cli": "^17.0.0"
+  },
+  "keywords": ["breach", "search", "osint"],
+  "author": "IdlebX",
+  "license": "MIT"
+}
